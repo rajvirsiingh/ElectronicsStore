@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"  Inherits="Group5_FinalProject.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Group 5 Final Project</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link href="style/styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header class="bg-dark text-white p-3">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <asp:Image runat="server" ID="logo" ImageUrl="Images/logo.png" CssClass="center-block" AlternateText="Site Logo"/> 
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container nav-container">
+                    <asp:HyperLink runat="server" ID="hlHome" NavigateUrl="~/home">Home</asp:HyperLink>
+                    <asp:HyperLink runat="server" ID="hlProducts" NavigateUrl="~/products">Products</asp:HyperLink>
+                    <asp:HyperLink runat="server" ID="hlCart" NavigateUrl="~/cart">Cart</asp:HyperLink>
+                    <asp:HyperLink runat="server" ID="hlAdmin" NavigateUrl="~/admin/login">Admin Login</asp:HyperLink>
+                    </div>
+            </nav>
+            <div class="container my-4">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+
+          
+                
+<footer>
+    <div class="footer-top"> 
+       <div class="container">
+         <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+         </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+         </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+         </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+         </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+         </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+             <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+         </div>
+       </div> 
+    </div>  
+    
+    <div class="container" style="border-top:1px solid grey;">
+        <div class="row text-center">   
+            <div class="col-lg-6 col-lg-offset-3">
+                <ul class="menu">
+                      <li>Rajvir Singh - 9002835</li>
+                      <li>Bimisha Mishra - 8969381</li>
+                      <li>Sheharyar Hashmi - 8998448</li>
+                      <li>Palak Gupta - 8997694</li>
+                      <li>Sandeep Kumar - 8992797</li>
+                      <li>Raghav Mahendaru - 9007855</li>
+                      <li>Dinkel Mistry - 8995115</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+   <div class="container">
+   
+     <div class="row text-center">
+     	<p>Copyright © 2025 All rights reserved</p>
+     </div>
+     
+    </div>
+</div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMater.master.cs"  Inherits="Group5_FinalProject.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Group 5 Final Project</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style/styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head1" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+            <header class="bg-dark text-white p-3">
+                <div class="container d-flex justify-content-between align-items-center">
+                   
+                    <asp:Image runat="server" ID="logo2" ImageUrl="Images/logo.png" AlternateText="Site Logo"/> 
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container nav-container">
+                  
+                  
+                </div>
+
+            </nav>
+            <div class="container my-4">
+                <asp:ContentPlaceHolder ID="MainContent2" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <footer class="bg-secondary text-white text-center p-2">
+                <ul>
+                    <li>Rajvir Singh - 9002835</li>
+                    <li>Bimisha Mishra - 8969381</li>
+                    <li>Sheharyar Hashmi - 8998448</li>
+                    <li>Palak Gupta - 8997694</li>
+                    <li>Sandeep Kumar - 8992797</li>
+                    <li>Raghav Mahendaru - 9007855</li>
+                    <li>Dinkel Mistry - 8995115</li>
+
+                </ul>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
